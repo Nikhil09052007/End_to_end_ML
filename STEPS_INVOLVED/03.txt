@@ -1,2 +1,10 @@
 Implementing setup.py to make our project a package itself for reusability provided by various platforms such as seaborn, numpy etc.
 ANd, in order to do that we'll reqquire an forder comnating __init__.py placed inside the folder as source(src).
+
+
+WE craeted a setup.py file for establishing a package manager. So that it automatically installs the data from requirements package.
+
+Excluded -e . from the setup file.
+
+pushed the code from pc to github account.
+
