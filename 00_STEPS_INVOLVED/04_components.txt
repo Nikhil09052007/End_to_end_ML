@@ -1,0 +1,13 @@
+## This particual forlder is created to make the frameworks in various instanes.
+
+It is contaning all the process which'll actually required while traing the model with various components organized in such way that it cann get with maximum clarity and redability in future if visited again.
+
+model_trainer.py is for containg the code which is used to tarin the model actually.
+
+4. Source as src folder itself contain all the code related to actaul model trainingg implementation.
+
+
+5. Pipeline folder contains the data of of traing the pipeline. (trigger, switch etc.)
+
+
+

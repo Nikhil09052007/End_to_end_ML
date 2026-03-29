@@ -1,0 +1,8 @@
+Pipelines are used to create a flow in a model to assure data safety and a continous workflow of data wiithout any leaks.
+
+
+
+
+
+
+
