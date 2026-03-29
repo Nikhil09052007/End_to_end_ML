@@ -1,0 +1,135 @@
+Why My Folder Was Not Pushed to GitHub (Understanding Git Workflow)
+Problem Statement
+
+I used the command:
+
+git push -u origin main
+
+But my folder STEPS_INVOLVED and the file inside it were not uploaded to GitHub.
+
+Core Concept (Very Important)
+
+Git does not automatically push all files from your project folder.
+
+Git only pushes files that are:
+
+Tracked
+Staged
+Committed
+Git Workflow Explained (Step-by-Step Logic)
+1. Untracked Files
+
+When you create a new file or folder:
+
+STEPS_INVOLVED/
+01.txt
+
+Git treats them as:
+
+Untracked files
+
+These files are invisible to Git tracking until you explicitly add them.
+
+2. Staging Files (git add)
+
+To tell Git to track files:
+
+git add STEPS_INVOLVED/
+
+or
+
+git add .
+
+👉 This moves files to the staging area
+
+Logic:
+
+“I want these files to be included in the next version (commit).”
+
+3. Committing Changes
+
+To save changes locally:
+
+git commit -m "Added steps documentation"
+
+Logic:
+
+“Save a snapshot of the current project state.”
+
+4. Pushing to GitHub
+
+Finally:
+
+git push
+
+Logic:
+
+“Upload committed changes to the remote repository (GitHub).”
+
+Why My Folder Was NOT Pushed
+Reason 1: Files Were Not Added
+
+If you did not run:
+
+git add STEPS_INVOLVED/
+
+👉 Git ignored the folder
+
+Reason 2: No Commit Was Made
+
+Even if you added files but did not commit:
+
+git commit -m "message"
+
+👉 Nothing gets pushed
+
+Reason 3: .gitignore File
+
+If .gitignore contains:
+
+STEPS_INVOLVED/
+
+or
+
+*.txt
+
+👉 Git will completely ignore those files
+
+Logic:
+
+“These files are not important for version control.”
+
+How to Check the Actual Issue
+
+Run:
+
+git status
+Possible Outputs
+Case 1: Untracked Files
+Untracked files:
+  STEPS_INVOLVED/
+
+✔ You forgot to add files
+
+Case 2: Changes Not Committed
+Changes to be committed:
+  new file: STEPS_INVOLVED/01.txt
+
+✔ You added but didn’t commit
+
+Case 3: Ignored Files
+ignored files:
+  STEPS_INVOLVED/
+
+✔ .gitignore is blocking it
+
+Case 4: Nothing to Commit
+nothing to commit, working tree clean
+
+✔ Everything is already committed or ignored
+
+Important Rule (Golden Rule of Git)
+
+Git only pushes what is committed, not everything in your folder.
+
+Best Practice (For Your Case)

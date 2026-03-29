@@ -1,0 +1,99 @@
+Project Setup Notes (Virtual Environment + Git + GitHub)
+1. Virtual Environment Setup
+
+I have created a virtual environment for this particular folder to keep all files and dependencies isolated from the base Python installation.
+
+This helps in:
+
+Managing project-specific dependencies
+Avoiding conflicts with other projects
+2. Moving Towards Real Data Science Work
+
+I am now starting to work on projects. It feels like I am finally entering the phase where I understand how actual data science workflows operate.
+
+3. Initializing Git Repository
+
+I initialized a Git repository to track all changes step-by-step.
+
+Command:
+git init
+
+This command initializes an empty Git repository.
+
+4. Adding a README File
+
+A README file is added to describe the purpose and workflow of the project.
+
+Command:
+git add README.md
+5. Committing Changes
+
+To save changes in Git with a message:
+
+git commit -m "Your message here"
+6. Checking Repository Status
+
+To check the current state of the repository:
+
+git status
+7. Setting Main Branch
+
+Before pushing code, ensure the branch is named main:
+
+git branch -M main
+8. Configuring Git Email
+
+To set or check your Git email:
+
+git config --global user.email
+9. Connecting to GitHub Repository
+
+To link your local repository with GitHub:
+
+git remote add origin https://github.com/Nikhil09052007/End_to_end_ML.git
+
+Note:
+Make sure the repository already exists on GitHub. Otherwise, you may encounter errors.
+
+10. Pushing Code to GitHub
+
+To upload your local code to GitHub:
+
+git push -u origin main 
+
+
+11. Understanding .gitignore
+
+The .gitignore file is used to exclude unnecessary files from being uploaded to GitHub.
+
+Examples:
+
+Virtual environments (venv)
+Temporary files
+System files
+
+You can create it directly on GitHub while setting up your repository.
+
+12. Pulling Changes from GitHub
+
+To fetch the latest updates from the GitHub repository:
+
+git pull
+
+This helps sync your local project with the remote repository.
+
+13. Why Virtual Environment is in .gitignore
+
+The virtual environment (venv) is excluded because:
+
+It contains system-specific files
+It is not required for others using the project
+Dependencies can be recreated using requirements.txt
+14. Terminal Tip
+
+To clear the terminal screen:
+
+cls
+15. Final Outcome
+
+I have successfully connected my local project with GitHub and set up version control properly.
