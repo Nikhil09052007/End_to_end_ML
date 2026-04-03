@@ -1,3 +1,7 @@
+# Stepts folder created by should be also ignored.
+00_STEPS_INVOLVED
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
